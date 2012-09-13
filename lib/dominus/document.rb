@@ -1,4 +1,5 @@
-require "dominus/item"
+require "delegate"
+
 module Dominus
   class Document < SimpleDelegator
 
@@ -23,7 +24,6 @@ module Dominus
     def items
       @items ||= super.each_with_object({}) do |item, hash|
         hash[item.name] = item.values.to_a
-        #ObjectSpace.define_finalizer(item, Item.cleanup(item))
         item.recycle
       end
     end
