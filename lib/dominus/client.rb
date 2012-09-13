@@ -34,10 +34,6 @@ module Dominus
       Database.new(database_name, @session)
     end
 
-    def cleanup
-      warn "cleanup is deprecated, it will cleanup on finalize"
-    end
-
   end
 
 end
