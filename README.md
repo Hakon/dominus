@@ -24,7 +24,7 @@ Make sure NCSO.jar is in the ruby load path. ($LOAD_PATH)
 ```ruby
 require "dominus"
 
-client = Dominus::Client.new()
+client = Dominus::Client.new("domino.example.com:63148", "username", "password")
 documents = client.find_database("database.nsf").where("attribute", "value")
 documents.each do |document|
   puts document["attribute"] # => value
