@@ -4,7 +4,7 @@ require File.expand_path('../lib/dominus/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Håkon Lerring"]
   gem.email         = ["hakon@powow.no"]
-  gem.description   = %q{TODO: Write a gem description}
+  gem.description   = %q{An easy to use wrapper around the domino diiop database api.}
   gem.summary       = %q{Adds an easy to use wrapper around the domino diiop database api.\n Memory management (recycling the domino objects) is handled by ruby.}
   gem.homepage      = "http://github.com/Hakon/dominus"
 
