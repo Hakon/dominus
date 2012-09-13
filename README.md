@@ -21,8 +21,6 @@ Or install it yourself as:
 
 ## Usage
 
-Make sure NCSO.jar is in the ruby load path. ($LOAD_PATH)
-
 ```ruby
 require "dominus"
 
