@@ -3,6 +3,8 @@
 Adds an easy to use wrapper around the domino diiop database api.
 Memory management (recycling the domino objects) is handled by ruby.
 
+*Warning*: This gem lacks tests. I hope to get around adding some tests soon.
+
 ## Installation
 
 Add this line to your application's Gemfile:
