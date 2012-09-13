@@ -1,6 +1,7 @@
 # Dominus
 
-TODO: Write a gem description
+Adds an easy to use wrapper around the domino diiop database api.
+Memory management (recycling the domino objects) is handled by ruby.
 
 ## Installation
 
@@ -18,7 +19,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Make sure NCSO.jar is in the ruby load path. ($LOAD_PATH)
+
+```ruby
+require "dominus"
+
+client = Dominus::Client.new()
+documents = client.find_database("database.nsf").where("attribute", "value")
+documents.each do |document|
+  puts document["attribute"] # => value
+end
+```
 
 ## Contributing
 
